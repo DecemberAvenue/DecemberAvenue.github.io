@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header #navbar_logo {
+  max-width: 70px;
+}
+
+header .nav-item {
+  font-size: 13px;
+  text-align: center;
+  padding: 8px 15px;
+  letter-spacing: 1px;
+}
+
+header .nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .nav-item a:hover {
+  color: #b3b3b3;
+}
+
+header .navbar-toggler {
+  background-color: transparent;
+}
+
+header .fa-bars {
+  color: #fff;
+  font-size: 22px;
+}
+
+.landing_page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing_page video {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing_page .landing_page_overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.landing_page .landing_page_content {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding-top: 140px;
+}
+
+.landing_page .landing_page_content h1 {
+  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 5px;
+}
+
+.landing_page .landing_page_content p {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.landing_page .landing_page_content button {
+  background-color: #1DB954;
+  font-size: 14px;
+  padding: 8px 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 2px;
+  -webkit-transition: padding 0.2s;
+  transition: padding 0.2s;
+}
+
+.landing_page .landing_page_content button:hover {
+  background-color: #1FA84F;
+  padding: 8px 50px;
+}
+
+#about {
+  padding-top: 115px;
+}
+
+#about .about_img img {
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+#about .about_descriptions h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+#about .about_descriptions h1::after {
+  content: "";
+  width: 200px;
+  height: 4px;
+  background-color: #1DB954;
+  display: block;
+}
+
+#about .about_descriptions p {
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+#about .offi_sm_link h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#about .offi_sm_link .offi_sm_link_item {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 25px;
+}
+
+#about .offi_sm_link a {
+  color: #808080;
+}
+
+#about .offi_sm_link a:hover {
+  color: #4d4d4d;
+}
+
+#about .offi_sm_link .offi_sm_link_item:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+#members {
+  padding-top: 110px;
+}
+
+#members .members_content h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+#members .members_content h1::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: #1DB954;
+  display: block;
+}
+
+#members .members_content p {
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+#members .members_content .members_item {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#members .members_content .members_item img {
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+#members .members_content .members_item h2 {
+  font-size: 23px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+#members .members_content .members_item label {
+  font-size: 17px;
+}
+
+#albums {
+  padding-top: 110px;
+}
+
+#albums .albums_content h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+#albums .albums_content h1::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: #1DB954;
+  display: block;
+}
+
+#albums .albums_content p {
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+#albums .albums_content .albums_item {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#albums .albums_content .albums_item img {
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+#albums .albums_content .albums_item .albums_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  padding: 0px 10px 0 10px;
+}
+
+#albums .albums_content .albums_item label {
+  font-size: 17px;
+  color: #fff;
+  padding-top: 50%;
+}
+
+#albums .albums_content .albums_item:hover .albums_overlay {
+  height: 100%;
+}
+
+#music_list {
+  padding-top: 30px;
+}
+
+#music_list .music_list_content h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+#music_list .music_list_content h1::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: #1DB954;
+  display: block;
+}
+
+#music_list .music_list_content p {
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+footer {
+  background-color: #000;
+  width: 100%;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+footer .footer_content {
+  text-align: center;
+  color: #fff;
+}
+
+footer .footer_content h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+footer .footer_content p {
+  font-size: 17px;
+}
+
+footer .footer_content .offi_sm_link_item {
+  display: inline;
+  padding: 0 10px;
+  font-size: 30px;
+}
+
+footer .footer_content a {
+  color: #fff;
+}
+
+footer .footer_content a:hover {
+  color: #cccccc;
+}
+
+footer .footer_content img {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 0 10px 5px #0d0d0d;
+          box-shadow: 0 0 10px 5px #0d0d0d;
+}
+
+footer .footer_content .copy {
+  padding-top: 50px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */
